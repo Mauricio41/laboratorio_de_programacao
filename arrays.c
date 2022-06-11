@@ -24,7 +24,6 @@ int questoes(){
     default:
         printf("Questao invalida!");
         break;
-    }  
     } while (key == 1);
     
 
