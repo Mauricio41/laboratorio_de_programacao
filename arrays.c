@@ -1,5 +1,16 @@
 #include <stdio.h>
 /* The questions must be asked from the first to the last, in ascending order, from bottom to top. */
+int questao3(){
+    int a[] = {1,2,3,4,5,6,7,8,9,10}, b[] = {2,4,6,8,10,12,14,16,18,20};
+    for (int i = 0; i < 10; i++){
+       //verificar se vetor A tem interseção com vetor B
+         if (a[i] == b[i]){
+              printf("%d\n", a[i]);
+         }
+    }
+
+    return 0;
+}
 int questao2(){
     int vet[] = {12,20,30,42,50,60,72,80,90,10}, i, number;
     
@@ -8,8 +19,6 @@ int questao2(){
     for(i=0; i<10; i++){
         if(vet[i] == number){
             printf("O numero %d esta na posicao %d\n", number, i);
-        }else{
-            printf("numero nao encontrado\n\n");
         }
     }       
    return 0;
@@ -45,6 +54,10 @@ int questoes(){
         break;
     case 2:
         questao2();
+        key = 0;
+        break;
+    case 3:
+        questao3();
         key = 0;
         break;
     /* add news questions to the bottom.
