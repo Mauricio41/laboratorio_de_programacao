@@ -56,8 +56,12 @@ int questoes(){
     default:
         printf("Questao invalida!");
         break;
+<<<<<<< HEAD
     }  
     } while (key == 0);
+=======
+    } while (key == 1);
+>>>>>>> 87493ac59cf7c311cd4eff1ca2b9a8d230284c73
     
 
     return 0;
